@@ -1,6 +1,6 @@
-RprogramingAssignment2
+R programing Assignment
 
-### Introduction
+Introduction
 
 This second programming assignment will require you to write an R
 -function that is able to cache potentially time-consuming computations. For
@@ -36,9 +36,8 @@ function in R. For example, if `X` is a square invertible matrix,
 
 
 
- makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
-
-makeCacheMatrix <- function(x = matrix()) {
+1. makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
+  makeCacheMatrix <- function(x = matrix()) {
          inv <- NULL
          set <- function(y) {
                  x <<- y
@@ -55,7 +54,7 @@ makeCacheMatrix <- function(x = matrix()) {
     
          
          
-This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
+2. This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
 If the inverse has already been calculated (and the matrix has not changed), then cacheSolve should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
